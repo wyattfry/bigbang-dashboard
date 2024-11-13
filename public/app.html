@@ -13,3 +13,18 @@
     <textarea class="config-text">Configuration details here...</textarea>
     <div class="installation-notes">Installation notes...</div>
 </div>
+<div class="uninstall-modal" style="display: none;">
+    <p>Are you sure you want to uninstall Kiali?</p>
+    <button class="confirm-uninstall">Uninstall</button>
+    <button class="cancel-button">Cancel</button>
+</div>
+<script>
+    document.querySelector('.uninstall-button').addEventListener('click', () => {
+        document.querySelector('.uninstall-modal').style.display = 'block';
+    });
+
+    document.querySelector('.cancel-button').addEventListener('click', () => {
+        document.querySelector('.uninstall-modal').style.display = 'none';
+    });
+
+</script>
