@@ -1,6 +1,7 @@
 // import Link from "next/link";
 
 import { Navbar } from "./_components/Navbar";
+import { AppList } from "./_components/AppList";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,10 @@ export default function HomePage() {
         <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-[4rem]">
           Applications
         </h1>
+        <AppList />
+        <button className="bg-[hsl(280,100%,70%)] hover:bg-[hsl(280,100%,60%)] text-white font-bold py-2 px-4 rounded">
+          Add Application
+        </button>
       </div>
     </main>
   );
