@@ -1,18 +1,18 @@
 import Link from "next/link";
 
-const apps = [
+const packages = [
   { id: 'gitlab', name: 'GitLab' },
   { id: 'jaeger', name: 'Jaeger' },
   // Add other apps here
 ];
 
-export function AppList() {
+export function PackageList() {
   return (
-    <div className="app-list">
-      {apps.map((app) => (
-        <Link href={`/apps/${app.id}`} key={app.id}>
+    <div className="package-list">
+      {packages.map((pkg) => (
+        <Link href={`/packages/${pkg.id}`} key={pkg.id}>
           <button className='bg-[hsl(280,100%,60%)] hover:bg-[hsl(280,100%,40%)] text-white font-bold size-40 m-4 rounded'>
-            <div className='text-2xl'>{app.name}</div>
+            <div className='text-2xl'>{pkg.name}</div>
           </button>
         </Link>
       ))}
