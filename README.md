@@ -1,6 +1,6 @@
 # Big Bang Dashboard
 
-This a dashboard web app for managing [Big Bang](https://repo1.dso.mil/big-bang/bigbang).
+This is a dashboard web app for managing [Big Bang](https://repo1.dso.mil/big-bang/bigbang).
 
 Project bootstrapped with [`create-t3-app`](https://create.t3.gg/).
 
